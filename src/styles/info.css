@@ -1,0 +1,37 @@
+/* Imported styles */
+@import url(./base.css);
+@import url(./splash.css);
+
+/* Info styles */
+.info-page > main > header > div h1 {
+    font-size: 4.5rem;
+}
+
+.info-page > main > .text-content {
+    margin-top: -1rem !important;
+    background: white;
+}
+
+.info-page a.info-link {
+    color: #EA4C89;
+}
+
+.info-page .btn-ig {
+    width: fit-content;
+    background-color: #EA4C89;
+}
+.info-page .btn-ig:hover {
+    background-color: #d73775;
+}
+
+.info-page hr {
+    color: #0000005c;
+}
+
+/* SVG bg */
+.info-page > main > header {
+    height: 30vh;
+    margin-top: -3rem;
+    color: white;
+    background-color: #515851;
+}

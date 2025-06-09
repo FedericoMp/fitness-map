@@ -1,0 +1,73 @@
+/* Imported styles */
+@import url(./icons.css);
+@import url(./bg.css);
+@import url(./animation.css);
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+main {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+}
+
+.navbar-brand {
+    font-size: small!important;
+}
+
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+}
+
+/* Font size */
+.fs-medium {
+    font-size: medium!important;
+}
+
+.fs-small {
+    font-size: small!important;
+}
+
+.wfit-content {
+    width: fit-content;
+}
+
+/* Input */
+input:focus, button:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.form-check-input:focus {
+    border: transparent!important;
+}
+
+.form-check-input:checked {
+    background-color: #212529!important;
+    border-color: #212529!important;
+}
+
+/* Aria current */
+li.nav-item[aria-current="page"] > a.nav-link[aria-current="page"] {
+    background-color: #212529;
+}
+
+li.nav-item[aria-current="page"] > a.nav-link[aria-current="page"] > h6 {
+    color: white!important;
+}
+
+li.nav-item[aria-current="page"] > a.nav-link[aria-current="page"] > p {
+    color: white!important;
+    opacity: .8;
+}
+
