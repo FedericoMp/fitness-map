@@ -12,7 +12,7 @@ package-lock.json
 .env*.local
 .env
 /lang
-Notex.txt
+Notes.txt
 
 # thumbnails
 ._*
