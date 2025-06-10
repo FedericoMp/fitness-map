@@ -81,3 +81,36 @@ const spTransition = (spEl) => {
     setTimeout(() => spEl.style.opacity = 0, 1000)
     setTimeout(() => spEl.remove(), 2000)
 }
+
+// ----------------------------------------------------
+
+export const shareUri = (path) => {
+    document.getElementById('btn-share').addEventListener('click', () => {
+        let sharecContentEl = document.getElementById('share-content');
+        const btn = `
+            <button id="btn-share" type="button" class="btn btn-dark wfit-content d-flex justify-content-center align-items-center" aria-label="Compartir">
+                <span class="gis--map-share"></span>
+            </button>
+        `;
+        const toast = (text) => `
+            <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        ${text}
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        `;
+        if(navigator.clipboard) {
+            try {
+                navigator.clipboard.writeText(path);
+                // alert("Copied the text: " + path);
+                sharecContentEl.innerHTML = btn + toast('La página fue copiada para compartir.');
+            } catch (error) {
+                // console.log(error)
+                sharecContentEl.innerHTML = btn + toast('Se produjo un error.');
+            }
+          }
+    })
+}

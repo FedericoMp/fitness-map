@@ -1,6 +1,6 @@
 import { buildMap, showMapMarkers } from './map.js'
 import { currentYear } from './utils.js'
-import { changeColorMap, splashScreen } from './dom.js'
+import { changeColorMap, splashScreen, shareUri } from './dom.js'
 
 export const App = () => {
     const path = window.location.pathname;
@@ -10,5 +10,6 @@ export const App = () => {
         changeColorMap();
     }
     currentYear();
-    splashScreen();
+    // splashScreen();
+    shareUri(window.location.href);
 };
