@@ -7,3 +7,7 @@ export const currentYear = () => {
 
 // Set lat and lng (helper)
 export const setLatLng = (lat, lng) => L.latLng(lat, lng);
+
+// ----------------------------------------------------
+
+export const isEngLeng = (path) => path.includes('/en/')

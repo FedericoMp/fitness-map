@@ -1,11 +1,23 @@
-export const changeColorMap = () => {
+import { isEngLeng } from './utils.js'
+
+export const changeColorMap = (path) => {
     document.getElementById('inptStyle').addEventListener('change', (e) => {
-        if (e.target.value === 'A color') {
+        if (e.target.value === (isEngLeng(path) ? 'Colorized' : 'A color')) {
             document.querySelector('#map>.leaflet-pane>.leaflet-tile-pane').style.filter = 'grayscale(0)';
         }
-        if (e.target.value === 'Simple') {
+        if (e.target.value === (isEngLeng(path) ? 'Black White' : 'Simple')) {
             document.querySelector('#map>.leaflet-pane>.leaflet-tile-pane').style.filter = 'grayscale(1)';
         }
+    })
+}
+
+// ----------------------------------------------------
+
+export const changeLang = (path) => {
+    document.getElementById('inptLgn').addEventListener('change', (e) => {
+        window.location.href = isEngLeng(path) 
+            ? window.location.origin + path.replace('/en','') 
+            : window.location.origin + '/en' + path;
     })
 }
 
@@ -21,11 +33,11 @@ export const attMarker = () => {
 
 // ----------------------------------------------------
 
-export const splashScreen = () => {
+export const splashScreen = (path) => {
     
     const splashSC =  document.getElementById('splash-sc');
     if (splashSC) {
-        document.getElementById('splash-sc').innerHTML = createSplashEL();
+        document.getElementById('splash-sc').innerHTML = createSplashEL(path);
         const splash = document.getElementById('splash')
         
         if(splash) spBar(splash)
@@ -33,7 +45,12 @@ export const splashScreen = () => {
 
 }
 
-const createSplashEL = () => {
+const createSplashEL = (path) => {
+    const textLoader = {
+        es: { progress: 'Cargando...' },
+        en: { progress: 'Loading...' }
+    };
+    
     return `
         <div id="splash" class="bg-topography d-flex justify-content-center align-items-center">
             <div class="d-flex flex-column">
@@ -49,10 +66,12 @@ const createSplashEL = () => {
                     <p class="m-0">Vila Seca (La Pineda)</p>
                 </div>
                 <div id="loader">
-                    <div id="progress" class="progress" role="progressbar" aria-label="Carga de App...">
+                    <div id="progress" class="progress" role="progressbar" 
+                        aria-label=${ isEngLeng(path) ? textLoader.en.progress : textLoader.es.progress}>
                         <div class="progress-bar bg-dark"></div>
                     </div>
-                    <small class="mt-2 d-block text-center opacity-25 anim-pulse">Cargando...</small>
+                    <small class="mt-2 d-block text-center opacity-25 anim-pulse">
+                        ${isEngLeng(path) ? textLoader.en.progress : textLoader.es.progress}</small>
                 </div>
             </div>
         </div>

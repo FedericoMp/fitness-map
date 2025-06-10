@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Meta Tags -->
-    <meta name="description" content="Aplicación web construida con herramientas frontend y basada en OpenStreen Maps con información sobre actividades físicas y deportivas.">
-    <meta name="keywords" content="Deporte, Bienestar, Actividades físicas, Naturaleza, Ejercicio, España, Playa">
+    <meta name="description" content="Web Applicaiton built with frontend tools and based on OpenStreen Maps with information about physical activities and sports.">
+    <meta name="keywords" content="Sports, Wellbeing, Physical Activities, Nature, Workout, Spain, Beach">
     <meta name="author" content="Federico Pérez">
-    <title>Info | Fitness Map - Página de Información</title>
-    <meta property="og:title" content="Info | Fitness Map - Página de Información"/>
-    <meta property="og:description" content="Aplicación web construida con herramientas frontend y basada en OpenStreen Maps con información sobre actividades físicas y deportivas."/>
-    <meta property="og:image" content="./img/og-image.webp"/>
-    <meta property="og:url" content="https://federicomp.github.io/fitness-map/info/" />
+    <title>Info | Fitness Map - Information Page (En)</title>
+    <meta property="og:title" content="Info | Fitness Map - Information Page (En)"/>
+    <meta property="og:description" content="Web Applicaiton built with frontend tools and based on OpenStreen Maps with information about physical activities and sports."/>
+    <meta property="og:image" content="../../img/og-image.webp"/>
+    <meta property="og:url" content="https://federicomp.github.io/fitness-map/en/info/" />
     <meta property="og:type" content="website" />
-    <link rel="canonical" href="https://federicomp.github.io/fitness-map/info/"/>
+    <link rel="canonical" href="https://federicomp.github.io/fitness-map/en/info/"/>
     <meta name="theme-color" content="#212529" />
     <!-- Icon -->
-    <link rel="icon" href="../img/heart-icon.svg" type="image/x-icon">
-    <link rel="shortcut icon" href="../img/heart-icon.svg" type="image/x-icon">
+    <link rel="icon" href="../../img/heart-icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../img/heart-icon.svg" type="image/x-icon">
     <!-- Resoruces -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../dist/info.css" />
-    <script type="module" src="../dist/app.js" defer></script>
+    <link rel="stylesheet" href="../../dist/info.css" />
+    <script type="module" src="../../dist/app.js" defer></script>
   </head>
   <body class="position-relative info-page">
     <!-- Main -->
@@ -29,7 +29,7 @@
         <!-- Lat Nav -->
         <nav class="navbar navbar-dark">
             <div class="container justify-content-between">
-              <a href="../index.html" title="Ir a la página principal" class="navbar-brand text-bg-dark rounded px-2 d-flex align-items-center"><span class="healthicons--heart-cardiogram-outline"></span><span class="ms-1">Fitness Map</span></a>
+              <a href="../../en/index.html" title="Go to Home page" class="navbar-brand text-bg-dark rounded px-2 d-flex align-items-center"><span class="healthicons--heart-cardiogram-outline"></span><span class="ms-1">Fitness Map</span></a>
               <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="tabler--menu-deep"></span>
               </button>
@@ -41,31 +41,32 @@
                     </div>
                     <div class="offcanvas-body p-0">
                         <!-- Menu -->
-                        <p class="text-secondary px-3 mb-0 pb-3 bg-white">Explore las secciones, encuentre su reto y comience su experiencia.</p>
+                        <p class="text-secondary px-3 mb-0 pb-3 bg-white">Explore the sections, find your challenge and begin your experience.</p>
                         <ul class="navbar-nav justify-content-end flex-grow-1">
                             <li class="nav-item position-relative border-top border-bottom">
-                                <a class="px-4 nav-link" href="../index.html" title="Ir a la página principal">
+                                <a class="px-4 nav-link" href="../../en/index.html" title="Go to Home page">
                                     <h6 class="my-2 text-dark d-flex align-items-center">Home</h6>
-                                    <p class="ps-1 mb-2 text-secondary">Empieza tu aventura aquí.</p>
+                                    <p class="ps-1 mb-2 text-secondary">Start your adventure here.</p>
                                 </a>
                             </li>
                             <li class="nav-item position-relative border-bottom" aria-current="page">
-                                <a class="px-4 nav-link" aria-current="page" href="index.html" title="Ir a la página de información">
+                                <a class="px-4 nav-link" aria-current="page" href="../../en/info/index.html" title="Go to Info page">
                                     <h6 class="my-2 text-dark d-flex align-items-center">Info</h6>
-                                    <p class="ps-1 mb-2 text-secondary">Objetivo principal de la aplicación.</p>
+                                    <p class="ps-1 mb-2 text-secondary">Main goal of web app.</p>
                                 </a>
                             </li>
                             <li class="nav-item position-relative">
                                 <form class="mt-3 d-flex flex-column px-4" role="filter">
                                     <!-- Leng -->
                                     <div class="row">
-                                        <h6 class="fs-6 text-dark col-12 col-form-label">Idioma</h6>
+                                        <h6 class="fs-6 text-dark col-12 col-form-label">Language</h6>
                                         <div class="col-12">
-                                            <div class="ps-1 btn-group btn-group-sm w-100" role="group" aria-label="Boton Seleccion Idioma" id="inptLgn">
+                                            <div class="ps-1 btn-group btn-group-sm w-100" role="group" aria-label="Boton Language Choice" id="inptLgn">
                                                 <input type="radio" class="btn-check" name="btrdln" id="btrdln1" autocomplete="off"
-                                                value="Español" checked>
+                                                value="Español">
                                                 <label class="btn btn-outline-dark" for="btrdln1">Español</label>
-                                                <input type="radio" class="btn-check" name="btrdln" id="btrdln2" autocomplete="off" value="English">
+                                                <input type="radio" class="btn-check" name="btrdln" id="btrdln2" autocomplete="off"
+                                                value="English" checked>
                                                 <label class="btn btn-outline-dark" for="btrdln2">English</label>
                                             </div>
                                         </div>
@@ -91,29 +92,29 @@
         <!-- Section App Info -->
         <section class="container-fluid rounded-top p-4 text-content">
             <div class="container">
-                <h2 class="my-3 pt-5">En búsca de lo desconocido</h2>
-                <p class="mb-5 pb-2">La aplicación web fue creada para compartir diferentes maneras de hacer actividad física, hay muchas opciones para elegir. El mapa y los puntos principales se basan en mis actividades personales favoritas. Puedes caminar, hacer senderismo o correr en bosques o playas, entrenar calistenia e incluso patinar o montar en bicicleta.</p>
+                <h2 class="my-3 pt-5">Run into your unknown</h2>
+                <p class="mb-5 pb-2">The web app was built to share differents ways to do physical activities, there are a lot of options to choose. The map and the main points are based on my personal and favorites activities. You can walk, hiking or running in woods or beaches, training calisthenics and even skating or ride a bike.</p>
                 <hr/>
                 <!-- Text + img -->
                 <div class="row my-5 align-items-center">
                     <div class="col-md-6 pe-md-5">
-                        <h3 class="my-3">No esperes para actuar</h3>
-                        <p>A pesar de las condiciones meteorológicas puedes hacer de tu viaje personal una aventura única.</p>
-                        <p class="mb-5 mb-md-0">Y por qué no combinar más de una, creo que hacer actividad física es genial para el bienestar, mantenerse sano y activo.</p>
+                        <h3 class="my-3">Don't wait to act</h3>
+                        <p>In spite of the weather conditions you can go and make your personal trip a unique adventure.</p>
+                        <p class="mb-5 mb-md-0">And why not combine more than one, I think doing physical activities is great for wellbeing, keep healthy and active.</p>
                     </div>
                     <div class="col-md-6 ps-md-5">
-                        <img src="../img/sports-1.webp" class="img-fluid rounded h-100" alt="Ciclismo en bosque" title="Ciclismo en bosque">
+                        <img src="../../img/sports-1.webp" class="img-fluid rounded h-100" alt="Ride a bike in woods" title="Ride a bike in woods">
                     </div>
                 </div>
                 <!-- Img + text -->
                 <div class="row my-5 align-items-center flex-column-reverse flex-md-row">
                     <div class="col-md-6 pe-md-5">
-                        <img src="../img/sport-2.webp" class="img-fluid rounded h-100" alt="Parque de calistenia en la playa" title="Parque de calistenia en la playa">
+                        <img src="../../img/sport-2.webp" class="img-fluid rounded h-100" alt="Calisthenics park on a beach" title="Calisthenics park on a beach">
                     </div>
                     <div class="col-md-6 ps-md-5">
-                        <h3 class="my-3">Elige moverte hoy mismo</h3>
-                        <p>Cada actividad cuenta, hay un montón de grandiosos paisajes naturales por descubrir, ver la puesta de sol, hacer amigos o entrenar.</p>
-                        <p class="mb-5 mb-md-0">Muy intuitivo y super fácil de usar, sólo tienes que ir a la página del mapa, seleccionar un lugar y disfrutar.</p>
+                        <h3 class="my-3">Take your action today</h3>
+                        <p>Every activity counts, there are a lot of beautiful nature locationes to discover, go for a walk, see the sunset, make friends or training.</p>
+                        <p class="mb-5 mb-md-0">Very intuitive and super easy to use, just go to the map tab, select a place to go and enjoy.</p>
                     </div>
                 </div>
             </div>
@@ -124,16 +125,16 @@
                 <!-- Text + img -->  
                 <div class="row align-items-center">
                     <div class="col-md-6 pt-2 pe-md-5">
-                        <h2 class="mb-3">Aventurero Fitness</h2>
-                        <p>Hola, soy Fede Pérez, aficionado a la naturaleza, atleta, instructor de fitness y diseñador web. Me encanta construir cosas como hobby, esto fue construido para compartir mi pasión combinada con mis habilidades en tecnología.</p>
-                        <p>No dudes en ponerte en contacto conmigo si quieres comentar algo sobre la aplicación, dar un paseo, hacer senderismo o correr, patinar en la playa, ir en bici por el bosque o incluso si necesitas ayuda con un programa de entrenamiento.</p>
-                        <a href="https://www.instagram.com/fmp.training/" title="Perfil de Instagram" class="btn btn-sm btn-ig text-white d-flex align-items-center mt-4 mb-5 mb-md-0" role="button" target="_blank" rel="noopener noreferrer">
+                        <h2 class="mb-3">Fitness Adventurer</h2>
+                        <p>Hello, I am Fede Pérez, nature fan, athlete, fitness instructor and web designer. Love building things as a hobby, this was built to share my passion combined with my tech skills.</p>
+                        <p>Feel free to contact me if you want to go for a walk, hiking or running, skating on beach, biking on woods or even if you need help with a training program.</p>
+                        <a href="https://www.instagram.com/fmp.training/" title="Instagram Profile" class="btn btn-sm btn-ig text-white d-flex align-items-center mt-4 mb-5 mb-md-0" role="button" target="_blank" rel="noopener noreferrer">
                             <span class="simple-icons--instagram me-2"></span>
                             @fmp.training
                         </a>
                     </div>
                     <div class="col-md-6 pt-2 ps-md-5">
-                        <img src="../img/sports-profile.webp" class="img-fluid rounded h-100" alt="Fede Pérez Aventurero Fitness" title="Fede Pérez Aventurero Fitness">
+                        <img src="../../img/sports-profile.webp" class="img-fluid rounded h-100" alt="Fede Pérez Fitness Adventurer" title="Fede Pérez Fitness Adventurer">
                     </div>
                 </div>
             </div>
@@ -142,9 +143,9 @@
         <footer class="navbar bg-body-tertiary pb-4">
             <div class="container-fluid">
                 <span class="navbar-brand m-auto">
-                    Transformando ideas en
-                    <a href="https://federicomp.github.io/portfolio/" title="Portfolio Web" class="ms-1 info-link" target="_blank" rel="noopener noreferrer">
-                        experiencias&nbsp;digitales
+                     Transforming ideas in
+                    <a href="https://federicomp.github.io/portfolio/" title="Web Portfolio" class="ms-1 info-link" target="_blank" rel="noopener noreferrer">
+                         digital&nbsp;experiences
                     </a>
                 </span>
             </div>

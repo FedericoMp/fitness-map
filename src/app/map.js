@@ -1,5 +1,5 @@
-import { setLatLng } from './utils.js'
-import { placesDataEs } from './places.js'
+import { setLatLng, isEngLeng } from './utils.js'
+import { placesDataEn, placesDataEs } from './places.js'
 import { attMarker } from './dom.js'
 
 // Map Initialization
@@ -38,7 +38,7 @@ export const showMapMarkers = (map, loc) => {
   });
   
   // Places Data
-  let placesData = placesDataEs;
+  let placesData = isEngLeng(loc) ? placesDataEn : placesDataEs;
 
   placesData.forEach((p) => {
     L.marker(setLatLng(p.lat, p.lng),{icon: mapIcon})
